@@ -18,7 +18,8 @@ export const SectionCards = styled.section`
         align-items:center;
         justify-content: center;
         gap: 20px;
-        transition: justify-content 0.5s, margin-left 0.5s , gap 0.5s;
+        margin-buttom: 4%;
+        transition: justify-content 0.5s, margin-buttom 0.5s , gap 0.5s;
 
     }
     @media(max-width: 1280px){
@@ -30,6 +31,7 @@ export const SectionCards = styled.section`
         gap: 20px;
         overflow-x:hidden;
         margin-left: 10%;
+        margin-buttom: 4%;
         transition: justify-content 0.5s, margin-left 0.5s , gap 0.5s;
     }
     @media(max-width: 890px){
@@ -40,9 +42,14 @@ export const SectionCards = styled.section`
         justify-content: center;
         gap: 2rem;
         overflow-x:hidden;
-        margin-top: 3%;
+        margin-top: 1%;
         margin-left: 10%;
+        margin-buttom: 4% ;
         transition: justify-content 0.5s, margin-left 0.5s , gap 0.5s;
     }
 `;
 
+
+export const FormCreateCards = styled.form`
+        margin: 5rem auto;
+`

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../../Components/Cards'
-import { SectionCards } from './style'
+import { SectionCards, FormCreateCards} from './style'
 import img1 from "../../Images/img1.jpg"
 import img2 from "../../Images/img2.jpg"
 import img3 from "../../Images/img3.jpg"
@@ -45,7 +45,7 @@ const Store = () => {
           <Card key={d} titulo={d.T} descricao={d.D} />
         )
       })}
-      <form onSubmit={(e) => {
+      <FormCreateCards onSubmit={(e) => {
           e.preventDefault()
           AddCard(Titulo, Descricao)
         }} style={{ display: "Flex", flexDirection: "column" }}>
@@ -62,7 +62,7 @@ const Store = () => {
           value={Descricao}
           onChange={(e) => setDescricao(e.target.value)} />
         <button type='submit'>add</button>
-      </form>
+      </FormCreateCards>
     </SectionCards>
   )
 }
